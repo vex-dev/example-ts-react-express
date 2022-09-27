@@ -108,6 +108,7 @@ export default class VideoRoom extends React.Component<VideoRoomProps, VideoRoom
           <p>Room {this.props.roomId}</p>
           <p>Join: {this.state.joinStatus}</p>
         </div>
+        <MyVideo room={this.state.vexRoom} stream={this.state.myVideoStream}/>
         <div className='spacer'/>
         <VideoGrid peers={this.state.peersInRoom}/>
       </div>
