@@ -1,38 +1,53 @@
-.App {
+.video-app {
+  margin: 10px;
+}
+
+.video-room .room-info {
+  float: left;
+  padding: 10px;
+}
+
+.my-video {
+  float: left;
+  width: 300px;
+  height: 200px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.my-video .controls {
+  padding: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.my-video .controls button {
+  margin: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.my-video video {
+  height: 150px;
 }
 
-.App-link {
-  color: #61dafb;
+.video-room .spacer {
+  clear: both;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.video-grid {
+  margin: 10px 0;
+}
+
+.peer-video {
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.peer-video .peer-name {
+  text-align: center;
+}
+
+.peer-video video {
+  height: 240px;
+}
+
+video {
+  aspect-ratio: 16/9;
+  object-fit: cover;
 }
